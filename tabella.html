@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabella Frutti</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar con due pulsanti -->
+  <div class="navbar">
+    <a href="tabella.html">Tabella</a>
+    <a href="gioco.html">Gioco</a>
+  </div>
+
+  <!-- Contenitore tabella -->
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Codice</th>
+          <th>Frutto</th>
+        </tr>
+      </thead>
+      <tbody id="fruit-table">
+        <!-- Qui il JS inserirà i dati -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Popolo la tabella dinamicamente
+    populateTable();
+  </script>
+</body>
+</html>
