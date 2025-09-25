@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Gioco Frutti</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">                                                 
+    <a href="tabella.html">Tabella</a>
+    <a href="gioco.html">Gioco</a>
+  </div>
+
+  <!-- Riquadro gioco -->
+  <div id="game-box">
+    <button id="start-btn">Inizia</button>
+
+    <!-- Contenuto del gioco (inizialmente nascosto) -->
+    <div id="game-content" class="hidden">
+      <div id="fruit-name"></div>
+      <div id="answer-section">
+        <input type="number" id="user-input" placeholder="Inserisci codice">
+        <button id="check-btn">Invia</button>
+      </div>
+      <div class="result hidden" id="result"></div>
+      <div class="stats hidden" id="stats"></div>
+      <button id="next-btn" class="hidden">Continua</button>
+    </div>
+
+    <!-- Schermata finale -->
+    <div id="end-screen" class="hidden">
+      <div id="final-stats"></div>
+      <button id="restart-btn">Fine</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    setupGame(); <!-- inizializza il gioco -->
+  </script>
+</body>
+</html>
